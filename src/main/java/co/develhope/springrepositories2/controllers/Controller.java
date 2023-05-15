@@ -30,7 +30,7 @@ public class Controller {
     @PutMapping("/put/{id}")
     public ProgrammingLanguage change(@PathVariable long id){
         ProgrammingLanguage pl = programmingLanguageRepository.getById(id);
-        pl.setInventore("Giada");
+        pl.setInventor("Giada");
         return programmingLanguageRepository.saveAndFlush(pl);
     }
 }

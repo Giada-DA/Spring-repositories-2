@@ -11,21 +11,21 @@ public class ProgrammingLanguage {
     private long id;
 
     @Column(nullable = false)
-    private String nome;
+    private String name;
 
-    private int AnnoCreazione;
+    private int firstAppearance ;
 
     @Column(nullable = false)
-    private String inventore;
+    private String inventor;
 
     public ProgrammingLanguage() {
     }
 
-    public ProgrammingLanguage(long id, String nome, int annoCreazione, String inventore) {
+    public ProgrammingLanguage(long id, String name, int firstAppearance, String inventor) {
         this.id = id;
-        this.nome = nome;
-        AnnoCreazione = annoCreazione;
-        this.inventore = inventore;
+        this.name = name;
+        this.firstAppearance = firstAppearance;
+        this.inventor = inventor;
     }
 
     public long getId() {
@@ -36,27 +36,27 @@ public class ProgrammingLanguage {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getAnnoCreazione() {
-        return AnnoCreazione;
+    public int getFirstAppearance() {
+        return firstAppearance;
     }
 
-    public void setAnnoCreazione(int annoCreazione) {
-        AnnoCreazione = annoCreazione;
+    public void setFirstAppearance(int firstAppearance) {
+        this.firstAppearance = firstAppearance;
     }
 
-    public String getInventore() {
-        return inventore;
+    public String getInventor() {
+        return inventor;
     }
 
-    public void setInventore(String inventore) {
-        this.inventore = inventore;
+    public void setInventor(String inventor) {
+        this.inventor = inventor;
     }
 }
